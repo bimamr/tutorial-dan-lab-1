@@ -1,0 +1,38 @@
+==================================================
+WIX1002 Tutorial 1 - Question 8
+==================================================
+Problem:
+Count the number of alphabet U and M from a sentence entered by user.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : sentence (String entered by user)
+Process : Initialize countU = 0, countM = 0
+          Traverse each character in sentence:
+            Convert character to uppercase (or compare with 'u', 'U', 'm', 'M')
+            If char is 'U', countU = countU + 1
+            Else if char is 'M', countM = countM + 1
+Output  : countU, countM
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    PROMPT "Enter a sentence: "
+    INPUT sentence
+    
+    SET countU = 0
+    SET countM = 0
+    
+    FOR EACH char in sentence DO
+        SET upperChar = UPPERCASE(char)
+        IF upperChar == 'U' THEN
+            SET countU = countU + 1
+        ELSE IF upperChar == 'M' THEN
+            SET countM = countM + 1
+        ENDIF
+    ENDFOR
+    
+    PRINT "Frequency of alphabet 'U': " + countU
+    PRINT "Frequency of alphabet 'M': " + countM
+END
+==================================================

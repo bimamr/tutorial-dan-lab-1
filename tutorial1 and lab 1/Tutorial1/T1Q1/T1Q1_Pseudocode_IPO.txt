@@ -1,0 +1,25 @@
+==================================================
+WIX1002 Tutorial 1 - Question 1
+==================================================
+Problem:
+Request two numbers from the user and print the multiplication of the numbers.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : num1, num2 (two numbers entered by user)
+Process : product = num1 * num2
+Output  : product (multiplication of the two numbers)
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    PROMPT "Enter first number: "
+    INPUT num1
+    PROMPT "Enter second number: "
+    INPUT num2
+    
+    SET product = num1 * num2
+    
+    PRINT "Multiplication result: " + product
+END
+==================================================

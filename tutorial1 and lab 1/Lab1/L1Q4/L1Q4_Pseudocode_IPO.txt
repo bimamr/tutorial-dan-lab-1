@@ -1,0 +1,32 @@
+==================================================
+WIX1002 Lab 1 - Question 4
+==================================================
+Problem:
+Display a chart (bar chart) based on data in Table 1: Total Sales of Product A.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : Monthly sales data (Months and Amounts)
+Process : 1. Iterate through each month and sales amount.
+          2. Compute number of asterisks (e.g. amount / 100).
+          3. Print month label followed by horizontal bar of asterisks and the numeric amount.
+Output  : Graphical bar chart representing sales data
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    DECLARE array months = ["January 2016", "February 2016", "March 2016", "April 2016", "May 2016", "Jun 2016"]
+    DECLARE array amounts = [2500, 1600, 2000, 2700, 3200, 800]
+    
+    PRINT "=== BAR CHART: TOTAL SALES OF PRODUCT A ==="
+    
+    FOR i = 0 TO 5 DO
+        PRINT months[i] + " | "
+        SET barLength = amounts[i] / 100
+        FOR b = 1 TO barLength DO
+            PRINT "*" (without newline)
+        ENDFOR
+        PRINT " (" + amounts[i] + ")"
+    ENDFOR
+END
+==================================================

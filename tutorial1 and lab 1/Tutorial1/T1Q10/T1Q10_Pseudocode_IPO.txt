@@ -1,0 +1,31 @@
+==================================================
+WIX1002 Tutorial 1 - Question 10
+==================================================
+Problem:
+Display the number of female student from a random list of 100 students.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : None (computer randomly generates student gender for 100 students)
+Process : Initialize femaleCount = 0
+          Repeat 100 times (for each student):
+            Generate random gender (e.g., 0 = Male, 1 = Female)
+            If gender is Female (1):
+                femaleCount = femaleCount + 1
+Output  : femaleCount (total number of female students)
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    SET femaleCount = 0
+    
+    FOR student = 1 TO 100 DO
+        GENERATE gender (0 for Male, 1 for Female)
+        IF gender == 1 THEN
+            SET femaleCount = femaleCount + 1
+        ENDIF
+    ENDFOR
+    
+    PRINT "Total female students: " + femaleCount
+END
+==================================================

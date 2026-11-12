@@ -1,0 +1,42 @@
+==================================================
+WIX1002 Tutorial 1 - Question 11
+==================================================
+Problem:
+Display a list of 5 random numbers in descending order. (Sort)
+
+1. IPO Model:
+--------------------------------------------------
+Input   : None (computer generates 5 random numbers)
+Process : 1. Generate 5 random numbers and store into array.
+          2. Print original random numbers.
+          3. Sort the array in descending order (e.g. bubble sort: compare adjacent pairs and swap if earlier < later).
+          4. Output the sorted array.
+Output  : List of 5 numbers sorted in descending order
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    DECLARE array numbers[5]
+    
+    FOR i = 0 TO 4 DO
+        numbers[i] = random integer between 1 and 100
+        PRINT numbers[i]
+    ENDFOR
+    
+    // Sort descending
+    FOR i = 0 TO 3 DO
+        FOR j = 0 TO (3 - i) DO
+            IF numbers[j] < numbers[j + 1] THEN
+                SET temp = numbers[j]
+                SET numbers[j] = numbers[j + 1]
+                SET numbers[j + 1] = temp
+            ENDIF
+        ENDFOR
+    ENDFOR
+    
+    PRINT "Sorted in descending order: "
+    FOR i = 0 TO 4 DO
+        PRINT numbers[i]
+    ENDFOR
+END
+==================================================

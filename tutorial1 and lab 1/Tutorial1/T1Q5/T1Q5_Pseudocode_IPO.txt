@@ -1,0 +1,25 @@
+==================================================
+WIX1002 Tutorial 1 - Question 5
+==================================================
+Problem:
+Print the perimeter of a rectangle.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : length, width (numbers entered by user)
+Process : perimeter = 2 * (length + width)
+Output  : perimeter (perimeter of the rectangle)
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    PROMPT "Enter length: "
+    INPUT length
+    PROMPT "Enter width: "
+    INPUT width
+    
+    SET perimeter = 2 * (length + width)
+    
+    PRINT "Perimeter of rectangle: " + perimeter
+END
+==================================================

@@ -1,0 +1,35 @@
+==================================================
+WIX1002 Tutorial 1 - Question 4
+==================================================
+Problem:
+Print the results of the two players' dice game.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : None (computer generates dice rolls)
+Process : Generate player1Dice (random 1 - 6)
+          Generate player2Dice (random 1 - 6)
+          Compare player1Dice and player2Dice:
+            If player1Dice > player2Dice -> Player 1 wins
+            Else if player2Dice > player1Dice -> Player 2 wins
+            Else -> Draw
+Output  : Dice rolls and game result
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    GENERATE player1Dice = random integer from 1 to 6
+    GENERATE player2Dice = random integer from 1 to 6
+    
+    PRINT "Player 1 rolled: " + player1Dice
+    PRINT "Player 2 rolled: " + player2Dice
+    
+    IF player1Dice > player2Dice THEN
+        PRINT "Result: Player 1 wins!"
+    ELSE IF player2Dice > player1Dice THEN
+        PRINT "Result: Player 2 wins!"
+    ELSE
+        PRINT "Result: It's a draw (tie)!"
+    ENDIF
+END
+==================================================

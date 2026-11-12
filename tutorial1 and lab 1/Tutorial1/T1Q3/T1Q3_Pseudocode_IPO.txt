@@ -1,0 +1,27 @@
+==================================================
+WIX1002 Tutorial 1 - Question 3
+==================================================
+Problem:
+Print the pass/fail grade based on the mark entered by user. The passing mark is at least 40.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : mark (numeric score entered by user)
+Process : Check if mark >= 40:
+          If true, status = PASS
+          If false, status = FAIL
+Output  : Status ("PASS" or "FAIL")
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    PROMPT "Enter student mark (0 - 100): "
+    INPUT mark
+    
+    IF mark >= 40 THEN
+        PRINT "Result: PASS"
+    ELSE
+        PRINT "Result: FAIL"
+    ENDIF
+END
+==================================================

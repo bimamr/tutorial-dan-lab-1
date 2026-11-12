@@ -1,0 +1,34 @@
+==================================================
+WIX1002 Tutorial 1 - Question 9
+==================================================
+Problem:
+Display the frequency of a keyword from a web page.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : webPageContent (text content of the web page), keyword (word to search)
+Process : Initialize frequency = 0
+          Scan through webPageContent looking for matches of keyword
+          Each time keyword is found, increment frequency = frequency + 1
+Output  : frequency (total count of occurrences of keyword)
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    PROMPT "Enter webpage text / content: "
+    INPUT webPageContent
+    PROMPT "Enter keyword to search: "
+    INPUT keyword
+    
+    SET frequency = 0
+    SET lowerContent = LOWERCASE(webPageContent)
+    SET lowerKeyword = LOWERCASE(keyword)
+    
+    WHILE lowerKeyword is found in lowerContent DO
+        SET frequency = frequency + 1
+        MOVE search index past current match
+    ENDWHILE
+    
+    PRINT "Frequency of keyword: " + frequency
+END
+==================================================

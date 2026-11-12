@@ -1,0 +1,26 @@
+==================================================
+WIX1002 Lab 1 - Question 2
+==================================================
+Problem:
+Display personal profile such as full name, matric number, address, email, contact, etc.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : None (pre-defined profile data)
+Process : Format and print personal profile information to standard output
+Output  : Formatted profile details (Name, Matric No, Address, Email, Contact)
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    PRINT "=================================================="
+    PRINT "                 STUDENT PROFILE                  "
+    PRINT "=================================================="
+    PRINT "Full Name      : Ahmad bin Abdullah"
+    PRINT "Matric Number  : 22001234"
+    PRINT "Address        : Kolej Kediaman Kinabalu, Universiti Malaya"
+    PRINT "Email          : ahmad.abdullah@siswa.um.edu.my"
+    PRINT "Contact Number : +6012-3456789"
+    PRINT "=================================================="
+END
+==================================================

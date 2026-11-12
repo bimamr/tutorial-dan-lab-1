@@ -1,0 +1,28 @@
+==================================================
+WIX1002 Tutorial 1 - Question 2
+==================================================
+Problem:
+Determine whether a random number is greater than 50.
+
+1. IPO Model:
+--------------------------------------------------
+Input   : None (computer-generated random number)
+Process : Generate randomNumber (e.g., 1 to 100)
+          Check condition (randomNumber > 50)
+Output  : Decision statement whether the number is greater than 50
+
+2. Pseudocode:
+--------------------------------------------------
+START
+    GENERATE randomNumber (between 1 and 100)
+    PRINT "Generated random number: " + randomNumber
+    
+    IF randomNumber > 50 THEN
+        PRINT randomNumber + " is greater than 50."
+    ELSE IF randomNumber == 50 THEN
+        PRINT randomNumber + " is equal to 50."
+    ELSE
+        PRINT randomNumber + " is NOT greater than 50."
+    ENDIF
+END
+==================================================
